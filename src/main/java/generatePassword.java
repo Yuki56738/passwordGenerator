@@ -4,7 +4,7 @@ import static java.lang.System.out;
 
 public class generatePassword {
     private static SecureRandom random= new SecureRandom();
-    private static final String NUMERIC ="0123456789";
+    private static final String NUMERIC ="0123456789abcdefghijklmnopqrstuvwxyz";
     public static String generatePassword(int len, String dic){
         String result ="";
         for (int i=0;i<len;i++){
